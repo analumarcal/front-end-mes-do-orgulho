@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+    background-color: rgb(161, 117, 202);
+}
+.link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(161, 117, 202);
+    animation: shadow 4s infinite;
+}
+#apresentacao {
+    width: 80vw;
+}
+
+
+#pessoas {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+#pessoa {
+    height: 80%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 10px;
+    background-color: rgb(161, 117, 202);
+    border-radius: 20px;
+}
+#container-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+#exibir-nome {
+    color: white;
+    animation: shadow 4s infinite;
+}
+#exibir-imagem {
+    height: 150%;
+}
+#exibir-bandeira {
+    height: 40px;
+    margin: 20px;
+}
+#exibir-bio {
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    background-color: rgb(73, 41, 103);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+#cadastro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#cadastro-titulo {
+    color: rgb(161, 117, 202);
+    max-width: 348px;
+}
+#cadastro form {
+    background-color: rgb(161, 117, 202);
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+#creditos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(161, 117, 202);
+    color: white;
+}
+.rede {
+    width: 10px;
+    fill: white
+}
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 10px red;
+    }
+    20% {
+        text-shadow: 0 0 10px orange;
+    }
+    40% {
+        text-shadow: 0 0 10px yellow;
+    }
+    60% {
+        text-shadow: 0 0 10px green;
+    }
+    80% {
+        text-shadow: 0 0 10px blue;
+    }
+    100% {
+        text-shadow: 0 0 10px violet;
+    }
+}
+
+@media (max-width: 1250px) {
+    #pessoas {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+@media (max-width: 850px) {
+    #pessoas {
+        grid-template-columns: 1fr;
+    } 
+}
+@media (max-width: 420px) {
+    #pessoa {
+        width: 200px;
+    }
+}
