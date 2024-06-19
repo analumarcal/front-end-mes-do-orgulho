@@ -117,6 +117,15 @@ body {
     flex-direction: column;
     padding: 20px;
 }
+#cadastrar {
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: white;
+}
+#cadastrar:hover {
+    box-shadow: 0 0 10px white;
+}
 
 
 
