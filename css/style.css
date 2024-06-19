@@ -18,7 +18,7 @@ body {
     color: white;
     text-decoration: none;
     text-align: center;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .link:hover {
     text-decoration: underline;
@@ -175,6 +175,12 @@ body {
 }
 @media (max-width: 420px) {
     #pessoa {
-        width: 200px;
+        width: 280px;
+    }
+}
+@media (max-width: 300px){
+    #pessoa {
+        width: 100%;
+        border-radius: 0;
     }
 }
