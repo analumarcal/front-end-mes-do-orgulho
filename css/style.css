@@ -134,6 +134,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 20vh;
     background-color: rgb(161, 117, 202);
     color: white;
@@ -170,8 +171,12 @@ body {
 }
 @media (max-width: 850px) {
     #pessoas {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     } 
+    #pessoa {
+        margin: 20px;
+    }
 }
 @media (max-width: 420px) {
     #pessoa {
@@ -181,6 +186,7 @@ body {
 @media (max-width: 300px){
     #pessoa {
         width: 100%;
+        height: 90%;
         border-radius: 0;
     }
 }
