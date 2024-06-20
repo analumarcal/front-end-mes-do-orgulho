@@ -52,8 +52,9 @@ body {
     margin: 0;
 }
 #pessoa {
-    height: 80%;
+    height: 500px;
     width: 300px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
